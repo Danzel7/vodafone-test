@@ -1,0 +1,16 @@
+@import '../../common/colours.scss';
+
+.dropDownContainer{
+    width: 200px;
+    height: 45px;
+
+    .dropDown{
+        width: 200px;
+        height: 45px;
+        border: 1px solid $color-grey-main;
+        border-radius: 3px;
+    }
+}
+.label{
+    font-weight: bold;
+}

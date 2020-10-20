@@ -1,0 +1,19 @@
+.listOfColours{
+    display: inline-grid;
+}
+.optionSelector{
+    border: 2px solid transparent;
+    width: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.optionSelected{
+    border: 2px solid black;
+}
+.colorOption{
+    width: calc(100% - 4px);
+    height: 46px;
+    border-radius: 46px;
+    margin: 2px;
+}

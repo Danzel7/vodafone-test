@@ -1,0 +1,23 @@
+.phoneGalleryImg{
+    border: 2px solid red;
+    width: 60px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1fr;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 6px;
+    
+}
+.phoneImgGallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.selectedImg{
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}

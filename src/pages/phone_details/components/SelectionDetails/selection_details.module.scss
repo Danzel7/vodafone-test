@@ -1,0 +1,18 @@
+.selectionDetails{
+    background-color: rgba(51,51,51,0.9);
+    color: white;
+    
+    .content {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding: 20px;
+    }
+}
+.selectedItem{
+    margin-top: 20px;
+}
+.selectedPhoneDetails{
+    margin-right: 40px;
+}

@@ -1,0 +1,33 @@
+.closeFilters{
+    transform: scaleY(0);    
+    transform-origin: top;
+    transition: transform 0.26s ease;
+}
+.openFilters{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.26s ease;
+}
+.filterContainer{
+    margin-top: 30px;
+}
+.filterLabel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.mobileFilters{
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition-property: all;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -ms-transition-property: all;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    overflow: hidden;
+}

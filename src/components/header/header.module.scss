@@ -1,0 +1,28 @@
+@import '../../common/colours.scss';
+
+.topHeader{
+    width: 100%;
+    height: 28px;
+    background-color: $color-black-secondary;
+}
+.mainHeader{
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid $color-grey-main;
+
+    .content{
+        display: grid;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.logo{
+    width: 48px;
+    height: 48px;
+    color: $color-red-main;
+    fill: $color-red-main;
+}

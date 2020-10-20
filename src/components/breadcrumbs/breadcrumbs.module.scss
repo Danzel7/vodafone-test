@@ -1,0 +1,54 @@
+@import '../../common/colours.scss';
+
+.breadCrumbContainer{
+    width: 100%;
+    border-bottom: 1px solid $color-grey-main;
+    border-top: 1px solid $color-grey-main;
+    background-color: $color-grey-secondary;
+    color: $color-black-main;
+
+    .inner{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+
+        .content{
+            display: grid;
+            grid-gap: 1px;
+            grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+        }
+    }
+}
+
+.breadcrumbLink {
+    font-size: 19px;
+    padding: 10px;
+}
+
+.pagnationArrow{
+    font-size: 20px;
+    color: $color-black-main;
+    margin-left: 20px;
+}
+.navBreadcrumbLink{
+    cursor: pointer;
+}
+.navBreadcrumbLink:hover{
+    text-decoration: underline;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0px;
+    }
+}
+
+li {
+    margin: 0px;
+}

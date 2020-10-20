@@ -1,0 +1,11 @@
+.gridItem {
+    border: 1px solid #e60000;
+    border-radius: 3px;
+    padding: 20px 10px 20px 10px;
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    cursor: pointer;
+}
+.gridItem:hover{
+    opacity: 0.5;
+}

@@ -1,0 +1,69 @@
+.availablePlans {
+    background-color: #ebebebcc;
+    padding: 25px;
+
+    .planContent {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .headerTxt {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .content {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
+    .plan {
+        width: 100%;
+        box-shadow: 0 1px 3px #ccc;
+        background-color: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .header{
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 22px;
+        }
+        .price{
+            padding-top: 25px;
+        }
+        .details{
+            width: 100%;
+            background-color: white;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .extraDetails{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            border-top: 1px solid #e60000;
+            border-bottom: 1px solid #e60000;
+        }
+        .extraDetailsSection{
+            display: grid;
+            padding: 15px;
+            background-color: white;
+            color: #e60000;
+            align-items: center;
+        }
+        .dataAllowance {
+            background-color: #e60000;
+            color: white;
+        }
+        .buttonContainer{
+            padding: 20px;
+        }
+    }
+}
