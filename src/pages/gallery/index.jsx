@@ -50,15 +50,15 @@ function Gallery() {
 
     function updateSorting(e) {
         const selectedVal = e?.target?.value;
-        let sortedPhones = [...filteredPhones];
+        let sortedPhones = [];
 
         if(selectedVal === 'lowestPriceFirst') {
             sortedPhones = [...filteredPhones].sort((a,b) => {
-                return a.initialPhonePrice.value - b.initialPhonePrice.value;
+                return a.price - b.price;
             });
         } else if (selectedVal === 'highestPriceFirst') {
             sortedPhones = [...filteredPhones].sort((a,b) => {
-                return b.initialPhonePrice.value - a.initialPhonePrice.value;
+                return b.price - a.price;
             });
         } else if (selectedVal === 'nameAToZ') {
             sortedPhones = [...filteredPhones].sort((a,b) => {
@@ -68,6 +68,8 @@ function Gallery() {
             sortedPhones = [...filteredPhones].sort((a,b) => {
                 return b.name.localeCompare(a.name)
             });
+        } else {
+            sortedPhones = [...filteredPhones];
         }
 
         setFilteredPhones(sortedPhones);
@@ -185,7 +187,7 @@ function Gallery() {
                     </div>
 
                     <div>
-                        {visiblePhones.length > 0 && (
+                        {visiblePhones.length > 0 ? (
                             <div className={styles.grid}>
                                 {visiblePhones.map(phone => (    
                                     <GalleryItem
@@ -200,6 +202,10 @@ function Gallery() {
                                         currency={phone.currency}
                                     />
                                 ))}
+                            </div>
+                        ) : (
+                            <div className={styles.noCriteriaMatch}>
+                                No Phones match your selected filter criteria
                             </div>
                         )}
                     </div>

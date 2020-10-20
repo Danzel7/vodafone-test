@@ -22,7 +22,6 @@ function PhoneDetails() {
         variants: []
     });
     const [selectedPlan, setSelectedPlan] = useState({});
-    const [selectedPhoneImage, setSelectedPhoneImage] = useState('');
     const [variants, setVariants] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     let history = useHistory();
@@ -33,7 +32,6 @@ function PhoneDetails() {
         try {
             const phone = phones.find(phone => phone.id === id);
             setSelectedPhone(phone);
-            setSelectedPhoneImage(phone.imageSrc);
             const newVariants = setupVariants(phone);
             
             setVariants([...newVariants]);
@@ -107,7 +105,6 @@ function PhoneDetails() {
         }
 
         newVariants.find(v => v.isSelected).images = images;
-        setSelectedPhoneImage(imgSrc);
         setVariants(newVariants);
     }
 
@@ -140,7 +137,11 @@ function PhoneDetails() {
                             <div className={styles.phoneDetailsContainer}>
                                 <div className={styles.phoneDetails}>
                                     <div className={styles.phoneDetailsImgContainer}>
-                                        <img className={styles.mainPhoneImg} src={selectedPhoneImage} alt={selectedPhone.name} />
+                                        <img
+                                            className={styles.mainPhoneImg}
+                                            src={variants.find(i => i.isSelected).images.find(i => i.isSelected).imgSrc}
+                                            alt={selectedPhone.name}
+                                        />
                                         <div>
                                             <PhoneImages 
                                                 images={variants.find(i => i.isSelected).images}

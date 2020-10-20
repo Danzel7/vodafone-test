@@ -4,33 +4,12 @@
     grid-gap: 1rem;
     padding-top: 40px;
 }
-.gridItem {
-    border: 1px solid #e60000;
-    border-radius: 3px;
-    padding: 20px 10px 20px 10px;
-    display: grid;
-    grid-template-columns: 135px 1fr;
-    cursor: pointer;
-}
-.gridItem:hover{
-     opacity: 0.5;
-}
-.galleryImage {
-    width: 135px;
-    height: 160px;
-    align-self: center;
-}
 
 .galleryContainer {
     padding-left: 10px;
     padding-right: 10px;
     max-width: 1200px;
     margin: 0 auto;
-}
-.galleryItemTextContent{
-    display: grid;
-    align-content: center;
-    margin-left: 6px;
 }
 .phoneContentArea{
     display: grid;
@@ -53,53 +32,17 @@
 .boldTxt{
     font-weight: bold;
 }
-
-
-
-
-
-
-/* filter styles */
-.filterContainer{
-    margin-top: 30px;
+.noCriteriaMatch{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
 }
-.filterLabel{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.mobileFilters{
-    /* display: none; */
-    -webkit-transition-property: all;
-    -webkit-transition-duration: .5s;
-    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    -moz-transition-property: all;
-    -moz-transition-duration: .5s;
-    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    -ms-transition-property: all;
-    -ms-transition-duration: .5s;
-    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    overflow: hidden;
-}
-
-.test{
-  transform: scaleY(0);    
-  transform-origin: top;
-  transition: transform 0.26s ease;
-}
-
-.test1{
-    transform: scaleY(1);
-    transform-origin: top;
-    transition: transform 0.26s ease;
-}
-
 
 /* media queries */
 @media only screen and (max-width: 650px) {
+    .grid{
+        padding-top: 20px;
+    }
     .phoneContentArea{
         display: grid;
         grid-template-columns: 1fr;
@@ -107,6 +50,9 @@
     .sortingContainer{
         text-align: left;
         padding-top: 20px;
-    padding-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .phoneContentArea{
+        margin-top: 20px;
     }
 }

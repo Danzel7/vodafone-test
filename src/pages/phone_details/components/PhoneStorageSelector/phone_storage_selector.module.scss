@@ -1,3 +1,5 @@
+@import '../../../../common/colours.scss';
+
 .listOfStorageChoices{
     display: inline-grid;
 }
@@ -9,7 +11,7 @@
     margin-right: 10px;
 }
 .optionSelected{
-    border: 2px solid black;
+    border: 2px solid $color-black-tetiary;
 }
 .storageOption{
     display: grid;
@@ -19,7 +21,7 @@
     height: 46px;
     border-radius: 46px;
     margin: 2px;
-    background-color: black;
-    color: white;
+    background-color: $color-black-tetiary;
+    color: $color-white-main;
     text-align: center;
 }

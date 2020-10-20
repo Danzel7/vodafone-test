@@ -9,3 +9,15 @@
 .gridItem:hover{
     opacity: 0.5;
 }
+
+.galleryImage {
+    width: 135px;
+    height: 160px;
+    min-height: 160px;
+    align-self: center;
+}
+.galleryItemTextContent{
+    display: grid;
+    align-content: center;
+    margin-left: 6px;
+}

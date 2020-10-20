@@ -13,10 +13,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .mainPhoneImg{
     max-height: 345px;
+    min-height: 345px;
 }
 .colourSelectors{
     margin-top: 10px;
@@ -75,8 +77,5 @@
         align-content: center;
         align-items: center;
         justify-content: center;
-    }
-    .phoneGalleryImg{
-        margin: 5px;
     }
 }

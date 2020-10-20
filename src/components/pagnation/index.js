@@ -18,7 +18,7 @@ export default function Pagnation({
                 <FontAwesomeIcon className={styles.pagnationArrow} icon={faChevronLeft} onClick={() => prev()} />
             )}
             {currentPage} of {lastPage}
-            {currentPage !== lastPage && (
+            {(currentPage !== lastPage && lastPage > 0) && (
                 <FontAwesomeIcon className={styles.pagnationArrow} icon={faChevronRight} onClick={() => next()}/>
             )}
         </div>
